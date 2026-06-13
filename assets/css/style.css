@@ -142,9 +142,6 @@ a:hover {
   max-height: 60px;
 }
 
-#main {
-  margin-top: 80px;
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -259,7 +256,7 @@ a:hover {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #68A4C4;
+  color: #919191;
 }
 
 .navbar-mobile .getstarted,
@@ -485,184 +482,6 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Why Us
---------------------------------------------------------------*/
-.why-us .container {
-  box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
-  background: #fff;
-}
-
-.why-us .icon-box+.icon-box {
-  margin-top: 50px;
-}
-
-.why-us .icon-box .icon {
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 72px;
-  height: 72px;
-  background: #f3f8fa;
-  border-radius: 6px;
-  transition: 0.5s;
-}
-
-.why-us .icon-box .icon i {
-  color: #68A4C4;
-  font-size: 32px;
-}
-
-.why-us .icon-box:hover .icon {
-  background: #68A4C4;
-}
-
-.why-us .icon-box:hover .icon i {
-  color: #fff;
-}
-
-.why-us .icon-box .title {
-  margin-left: 95px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.why-us .icon-box .title a {
-  color: #343a40;
-  transition: 0.3s;
-}
-
-.why-us .icon-box .title a:hover {
-  color: #68A4C4;
-}
-
-.why-us .icon-box .description {
-  margin-left: 95px;
-  line-height: 24px;
-  font-size: 14px;
-}
-
-.why-us .video-box {
-  position: relative;
-}
-
-.why-us .video-box img {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.why-us .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(#68A4C4 50%, rgba(104, 164, 196, 0.4) 52%);
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
-  overflow: hidden;
-}
-
-.why-us .play-btn::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.why-us .play-btn::before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  animation-delay: 0s;
-  animation: pulsate-btn 2s;
-  animation-direction: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(104, 164, 196, 0.7);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-
-.why-us .play-btn:hover::after {
-  border-left: 15px solid #68A4C4;
-  transform: scale(20);
-}
-
-.why-us .play-btn:hover::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  animation: none;
-  border-radius: 0;
-}
-
-@keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
-/*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
-.features .row+.row {
-  margin-top: 100px;
-}
-
-.features h3 {
-  font-weight: 400;
-  font-size: 24px;
-}
-
-.features ul {
-  list-style: none;
-  padding: 0;
-}
-
-.features ul li {
-  padding-bottom: 10px;
-}
-
-.features ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #68A4C4;
-}
-
-.features p:last-child {
-  margin-bottom: 0;
-}
 
 /*--------------------------------------------------------------
 # About
@@ -672,6 +491,7 @@ section {
   text-align: center;
   font-size : 140px;
   color : black;
+  padding-top: 60px;
 }
 
 .about h3 {
@@ -682,22 +502,6 @@ section {
 
 .about .img-fluid {
   margin: 228px 0px;
-}
-
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts .counters span {
-  font-size: 48px;
-  display: block;
-  color: #919191;
-}
-
-.facts .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
 }
 
 /*--------------------------------------------------------------
@@ -792,193 +596,6 @@ section {
   margin-bottom: 0;
 }
 
-
-/*--------------------------------------------------------------
-# Our Skills
---------------------------------------------------------------*/
-
-.skills h1 {
-  text-align: center;
-  padding-top: 70px;
-  padding-bottom: 20px;
-
-}.skills p {
-  text-align: center;
-  padding-bottom: 70px;
-}
-
-/*--------------------------------------------------------------
-# Service Details
---------------------------------------------------------------*/
-.service-details {
-  padding-bottom: 10px;
-}
-
-.service-details .card {
-  border: 0;
-  padding: 0 30px;
-  margin-bottom: 60px;
-  position: relative;
-}
-
-.service-details .card-img {
-  width: calc(100% + 60px);
-  margin-left: -30px;
-  overflow: hidden;
-  z-index: 9;
-  border-radius: 0;
-}
-
-.service-details .card-img img {
-  max-width: 100%;
-  transition: all 0.3s ease-in-out;
-}
-
-.service-details .card-body {
-  z-index: 10;
-  background: #fff;
-  border-top: 4px solid #fff;
-  padding: 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  margin-top: -60px;
-  transition: 0.3s;
-}
-
-.service-details .card-title {
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.service-details .card-title a {
-  color: #1e4356;
-  transition: 0.3s;
-}
-
-.service-details .card-text {
-  color: #5e5e5e;
-}
-
-.service-details .read-more a {
-  color: #777777;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 12px;
-  transition: 0.3s;
-}
-
-.service-details .read-more a:hover {
-  color: #68A4C4;
-}
-
-.service-details .card:hover img {
-  transform: scale(1.1);
-}
-
-.service-details .card:hover .card-body {
-  border-color: #68A4C4;
-}
-
-.service-details .card:hover .card-body .card-title a {
-  color: #68A4C4;
-}
-
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .row {
-  padding-top: 40px;
-}
-
-.pricing .box {
-  padding: 40px;
-  margin-bottom: 30px;
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-  background: #fff;
-  text-align: center;
-}
-
-.pricing h3 {
-  font-weight: 300;
-  margin-bottom: 15px;
-  font-size: 28px;
-}
-
-.pricing h4 {
-  font-size: 46px;
-  color: #68A4C4;
-  font-weight: 400;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 25px;
-}
-
-.pricing h4 span {
-  color: #bababa;
-  font-size: 18px;
-  display: block;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #999;
-  text-align: left;
-  line-height: 20px;
-}
-
-.pricing ul li {
-  padding-bottom: 12px;
-}
-
-.pricing ul i {
-  color: #68A4C4;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-}
-
-.pricing ul .na i {
-  color: #ccc;
-}
-
-.pricing ul .na span {
-  text-decoration: line-through;
-}
-
-.pricing .get-started-btn {
-  background: #1e4356;
-  display: inline-block;
-  padding: 6px 30px;
-  border-radius: 20px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  transition: 0.3s;
-}
-
-.pricing .get-started-btn:hover {
-  background: #68A4C4;
-}
-
-.pricing .featured {
-  z-index: 10;
-  margin: -30px -5px 0 -5px;
-}
-
-.pricing .featured .get-started-btn {
-  background: #68A4C4;
-}
-
-.pricing .featured .get-started-btn:hover {
-  background: #85b6cf;
-}
-
-
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -988,6 +605,7 @@ section {
   text-align: center;
   font-size : 140px;
   color : black;
+  padding-top: 60px;
 }
 
 .portfolio {
@@ -1162,13 +780,13 @@ section {
   font-size: 12px;
   color: #999;
   letter-spacing: 1px;
-  margin-top: 15px;
+  margin: 15px;
 }
 
 .portfolio-details .portfolio-info-section p {
   font-size: 14px;
   color: #333;
-  margin: 5px 0 0 0;
+  margin: 15px;
 }
 
 /* 오른쪽 설명 텍스트 */
@@ -1312,6 +930,15 @@ section {
   padding: 40px 0;
 }
 
+.contact h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size : 140px;
+  color : black;
+  padding-top: 60px;
+}
+
+
 .contact h3 {
   text-align: center;
   font-size: 24px;
@@ -1402,36 +1029,35 @@ section {
   background-color: #555;
 }
 
-/*--------------------------------------------------------------
-# Map
---------------------------------------------------------------*/
-.map {
-  padding: 0;
-  margin-bottom: -6px;
-}
-
-.map iframe {
-  width: 100%;
-  height: 380px;
-}
 
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
 .blog {
   padding: 0px;
+  background-color: #000;
 }
 
+.blog h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size : 140px;
+  color : #fff;
+  padding: 60px 0px;
+}
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
   border: 1px solid black;
+  background-color: #fff;
+  border-radius: 20px;
 }
 
 .blog .entry .entry-img {
   max-height: 440px;
   margin: -30px -30px 20px -30px;
   overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .blog .entry .entry-title {
@@ -1775,8 +1401,10 @@ section {
 
 .blog .sidebar {
   padding: 30px;
-  margin: 0 0 60px 20px;
+  margin: 0 10px;
+  background-color: #ffffff;
   border: 1px solid black;
+  border-radius: 20px;
 }
 
 .blog .sidebar .sidebar-title {
@@ -1883,9 +1511,8 @@ section {
 .blog .sidebar .recent-posts time {
   display: block;
   margin-left: 95px;
-  font-style: italic;
-  font-size: 14px;
-  color: #aaaaaa;
+  font-size: 10px;
+  color: #505050;
 }
 
 .blog .sidebar .tags {
@@ -1925,13 +1552,17 @@ section {
 }
 
 .ec-base-paginate.typeList {
-  margin: 60px 0;
+  padding: 60px 0;
   text-align: center;
   font-size: 16px;
   line-height: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.ec-base-paginate.typeList a{
+  color: #fff;
 }
 
 .ec-base-paginate.typeList ol {
@@ -1995,7 +1626,7 @@ section {
 
 .notice h3 {
   text-align: center;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 500;
   padding-bottom: 30px;
   border-bottom: none;
@@ -2011,6 +1642,16 @@ section {
 }
 
 /* 헤더 */
+
+.notice h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size : 140px;
+  color : black;
+  padding-top: 60px;
+}
+
+
 .notice-table thead tr {
   background-color: #f5f5f5;
 }
@@ -2045,7 +1686,7 @@ section {
 }
 
 .notice-table td.subject a:hover {
-  color: #68A4C4;
+  color: #929292;
 }
 
 /* 호버 효과 */
@@ -2110,7 +1751,6 @@ section {
 
 /* 제목 영역 */
 .notice-detail-header {
-  border-top: 2px solid #333;
   border-bottom: 1px solid #ddd;
   padding: 20px 0;
   margin-bottom: 30px;
@@ -2132,13 +1772,18 @@ section {
 /* 본문 영역 */
 .notice-detail-content {
   min-height: 400px;
-  padding: 20px;
+  padding: 100px 20px;
   border: 1px solid #eee;
   border-radius: 4px;
   font-size: 14px;
   line-height: 1.8;
   color: #555;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+.notice-text {
+  padding-bottom: 30px;
 }
 
 /* 목록 버튼 */
@@ -2250,19 +1895,29 @@ ul.util {
 # Company
 --------------------------------------------------------------*/
 .company {
-  padding: 40px 0;
+  padding: 40px 0 400px 0;
+  background-color: #000;
 }
+
+.company h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size : 140px;
+  color : rgb(255, 255, 255);
+  padding-top: 60px;
+}
+
 
 .company h3 {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin: 30px;
 }
 
 /* 탭 */
 .company-tab {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #000000;
   margin-bottom: 30px;
 }
 
@@ -2280,7 +1935,8 @@ ul.util {
   width: 60%;
   margin: 0 auto;
   border-collapse: collapse;
-  border-bottom: 1px solid #ddd;
+  border: 2px solid #ffffff;
+  background-color: #000000;
 }
 
 .company-table th {
@@ -2288,23 +1944,33 @@ ul.util {
   padding: 14px 20px;
   font-size: 14px;
   font-weight: 500;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #eee;
+  background-color: #000000;
+  border-bottom: 1px solid #ffffff;
   text-align: center;
-  color: #333;
+  color: #ffffff;
 }
 
 .company-table td {
   padding: 14px 20px;
   font-size: 14px;
-  color: #555;
-  border-bottom: 1px solid #eee;
+  color: #ffffff;
+  background-color: #000;
+  border-bottom: 1px solid #ffffff;
 }
 
 /* 이용약관 */
 .terms {
   padding: 40px 0;
 }
+
+.terms h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size : 140px;
+  color : black;
+  padding-top: 60px;
+}
+
 
 .terms h3 {
   text-align: center;
@@ -2344,6 +2010,8 @@ ul.util {
 
 .terms-content h2 {
   color: rgb(124, 124, 124);
+  text-align: left;
+  letter-spacing: normal;
   font-size: 14px;
   margin-bottom: 15px;
 }
@@ -2421,6 +2089,22 @@ ul.util {
     transform: translateX(-50%);
     top: 50%;
   }
+
+  .company-table {
+    width: 100%;
+  }
+
+  .company-table th {
+    width: 120px;
+    font-size: 13px;
+    padding: 12px 10px;
+  }
+
+  .company-table td {
+    font-size: 13px;
+    padding: 12px 10px;
+    word-break: keep-all;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2476,6 +2160,33 @@ ul.util {
     font-size: 50px;
   }
 
+  .blog h2 {
+    font-size: 50px;
+  }
+
+  .notice h2 {
+    font-size: 50px;
+  }
+
+  .company h2 {
+    font-size: 50px;
+  }
+
+  .contact h2 {
+    font-size: 50px;
+  }
+
+  .terms h2 {
+    font-size: 50px;
+  }
+
+
+  .terms-content h2 {
+    font-size: 15px;
+  }
+
+
+
   .portfolio-details .portfolio-details-slider img {
     width: 100%; /* 모바일에서 화면 꽉 차게 */
     height: 250px;
@@ -2486,6 +2197,102 @@ ul.util {
     max-width: 80%;
     margin: 0 auto 30px auto;
   }
+
+  .portfolio-info-section {
+    padding: 0 15px;
+  }
+
+  .company-table {
+    width: 100%;
+  }
+
+  .company-table th {
+    width: 100px;
+    font-size: 12px;
+    padding: 10px 8px;
+  }
+
+  .company-table td {
+    font-size: 12px;
+    padding: 10px 8px;
+  }
+
+  .notice-table {
+    font-size: 12px;
+  }
+
+  .notice-table th,
+  .notice-table td {
+    padding: 8px 5px;
+  }
+
+  /* 작성자, 작성일, 조회 숨기기 */
+  .notice-table th:nth-child(3),
+  .notice-table th:nth-child(4),
+  .notice-table th:nth-child(5),
+  .notice-table td:nth-child(3),
+  .notice-table td:nth-child(4),
+  .notice-table td:nth-child(5) {
+    display: none;
+  }
+
+  .notice-search {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 5px;
+  }
+
+  .notice-search select {
+    width: 100%;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .search-input-group input[type=text] {
+    width: 150px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .search-input-group button {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  .notice-search select {
+    width: auto;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+    .notice-detail-header h3 {
+    font-size: 16px;
+  }
+
+  .notice-detail-meta span {
+    font-size: 12px;
+  }
+
+  .notice-detail-content {
+    font-size: 13px;
+    padding: 30px;
+  }
+
+  .notice-detail-content h5 {
+    font-size: 13px;
+  }
+
+  .notice-detail-content img {
+    width: 100%;
+  }
+
+  .notice-nav-table td {
+    font-size: 12px;
+    padding: 8px 5px;
+  }
+}
+
+
 
 
 /* 작은 모바일 */
@@ -2520,6 +2327,42 @@ ul.util {
     white-space: normal;  /* 줄바꿈 허용 */
   }
 
+  .blog h2 {
+    font-size: 50px;
+    word-break: keep-all; /* 단어 단위로 줄바꿈 */
+    white-space: normal;  /* 줄바꿈 허용 */
+  }
+
+  .notice h2 {
+    font-size: 50px;
+    word-break: keep-all; /* 단어 단위로 줄바꿈 */
+    white-space: normal;  /* 줄바꿈 허용 */
+  }
+
+  .company h2 {
+    font-size: 50px;
+    word-break: keep-all; /* 단어 단위로 줄바꿈 */
+    white-space: normal;  /* 줄바꿈 허용 */
+  }
+
+  
+  .terms h2 {
+    font-size: 50px;
+    word-break: keep-all; /* 단어 단위로 줄바꿈 */
+    white-space: normal;  /* 줄바꿈 허용 */
+  }
+    
+  .terms-content h2 {
+    font-size: 15px;
+  }
+
+
+  .contact h2 {
+    font-size: 50px;
+    word-break: keep-all; /* 단어 단위로 줄바꿈 */
+    white-space: normal;  /* 줄바꿈 허용 */
+  }
+
   .pricing .box {
     max-width: 100%;
     margin: 0 auto 30px auto;
@@ -2534,7 +2377,7 @@ ul.util {
   }
 
 }
-}
+
 
 
 
