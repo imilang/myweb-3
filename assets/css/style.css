@@ -343,81 +343,62 @@ a:hover {
 
 #hero {
   width: 100%;
-  height: 90vh;
-  position: relative;
-  overflow: hidden;
+  height: 80vh;
   background: #000;
-}
-
-#hero .carousel-container {
-  position: relative;
-  z-index: 1;
-}
-
-
-#hero .star-decoration {
-  position: absolute;
-  right: 15%;
-  top: 40%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  color: white;
-}
-
-#hero .star-decoration svg {
-  width: 90px; /* 70px → 90px으로 변경 */
-  height: 90px;
 }
 
 
 #hero .hero-logo {
-  display: block;
-  width: 700px; /* 원하는 크기로 조절 */
-  position: relative;
-  z-index: 1;
+  width: 1500px;
 }
 
-#hero .light-glow {
-  position: absolute;
-  left: 15%;
-  top: 60%; /* 로고 아래 위치로 조정 */
-  width: 700px;
-  height: 60px;
-  background: radial-gradient(ellipse, rgba(255,255,255,0.8) 0%, transparent 70%);
-  filter: blur(8px);
-  z-index: 0;
-}
-
-
-#hero .hero-logo-wrap {
-  position: absolute;
-  left: 15%;
-  top: 40%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: row; /* column → row로 변경 */
-  align-items: center; /* 세로 가운데 정렬 */
-  gap: 30px; /* 로고랑 텍스트 사이 간격 */
-}
-
-#hero p {
-  width: fit-content;
-  font-size: 30px;
-  margin: 10px 0 0 0; /* 로고 아래 여백 */
-  color: #ffffff;
+#hero .hero-logo-wrap h3 {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 10px;
   font-style: italic;
-  letter-spacing: 7px;
-  white-space: nowrap;
+  color: #fff;
+  padding-bottom: 70px;
 }
 
-#hero .star-decoration a svg {
-  transition: 0.3s;
+
+
+.portfolio-banner {
+  padding: 40px 0;
+  background-color: #000;
 }
 
-#hero .star-decoration a:hover svg path {
-  fill: #000000; /* 원하는 색으로 변경 */
+.portfolio-category {
+  margin-bottom: 60px;
+}
+
+.portfolio-category h2 {
+  font-size: 120px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.portfolio-category:nth-child(even) h2 {
+  text-align: right; /* 짝수는 오른쪽 정렬 */
+}
+
+.category-swiper {
+  width: 100%;
+}
+
+.category-swiper .swiper-slide {
+  width: 33.333%;
+}
+
+.category-swiper .swiper-slide img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  padding: 40px 20px;
+  background-color: #000000;
+  margin: 20px 0px 150px 0px;
 }
 
 
@@ -660,7 +641,18 @@ section {
   text-align: center;
   font-size : 140px;
   color : black;
-  padding-top: 60px;
+  padding: 60px 0px;
+}
+
+#portfolio-details h3 {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size : 50px;
+  color : black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  margin-bottom: 50px;
 }
 
 .portfolio-details-slider .swiper-slide img {
@@ -1752,12 +1744,12 @@ ul.util {
 }
 
 /* 탭 */
-#company-tab {
+.company-tab {
   border-bottom: 1px solid #000000;
   margin-bottom: 30px;
 }
 
-#company-tab span {
+.company-tab span {
   display: inline-block;
   padding: 10px 20px;
   font-size: 14px;
@@ -1767,7 +1759,7 @@ ul.util {
 }
 
 /* 테이블 */
-#company-table {
+.company-table {
   width: 60%;
   margin: 0 auto;
   border-collapse: collapse;
@@ -1775,7 +1767,7 @@ ul.util {
   background-color: #000000;
 }
 
-#company-table th {
+.company-table th {
   width: 150px;
   padding: 14px 20px;
   font-size: 14px;
@@ -1786,7 +1778,7 @@ ul.util {
   color: #ffffff;
 }
 
-#company-table td {
+.company-table td {
   padding: 14px 20px;
   font-size: 14px;
   color: #ffffff;
@@ -1859,46 +1851,22 @@ ul.util {
    반응형 미디어쿼리
    ============================================ */
 
-/* 1800px 이하 (대형 모니터) */
-@media (max-width: 1800px) {
-  .hero-logo { width: 450px; }
-
-  .hero-logo-wrap {
-    flex-direction: column-reverse;
-    align-items: center;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-    gap: 15px;
-  }
-
-  #hero p { font-size: 22px; letter-spacing: 3px; }
-
-  .star-decoration { right: 8%; top: 35%; }
-  .star-decoration svg { width: 60px; height: 60px; }
-
-  .light-glow { width: 450px; left: 50%; transform: translateX(-50%); top: 50%; }
-}
 
 /* 1400px 이하 (아이패드) */
 @media (max-width: 1400px) {
-  .hero-logo { width: 380px; }
 
-  .hero-logo-wrap {
-    flex-direction: column-reverse;
-    align-items: center;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-    gap: 15px;
+  #header .logo img { width: 200px; }
+
+
+    #hero .hero-logo {
+    width: 600px;
   }
 
-  #hero p { font-size: 18px; letter-spacing: 3px; }
-
-  .star-decoration { right: 5%; top: 35%; gap: 14px; }
-  .star-decoration svg { width: 50px; height: 50px; }
-
-  .light-glow { width: 380px; left: 50%; transform: translateX(-50%); top: 50%; }
+  #hero .hero-logo-wrap h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-bottom: 30px;
+  }
 
   .company-table { width: 100%; }
   .company-table th { width: 120px; font-size: 13px; padding: 12px 10px; }
@@ -1911,28 +1879,21 @@ ul.util {
 }
 
 /* 850px 이하 (모바일) */
-@media (max-width: 850px) {
+@media (max-width: 768px) {
 
   /* Hero */
   #header .logo img { width: 200px; }
 
-  #hero .hero-logo { width: 300px; }
 
-  #hero .hero-logo-wrap {
-    flex-direction: column-reverse;
-    align-items: center;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-    gap: 15px;
+    #hero .hero-logo {
+    width: 500px;
   }
 
-  #hero p { font-size: 16px; letter-spacing: 3px; }
-
-  #hero .star-decoration { right: 3%; top: 35%; gap: 12px; }
-  #hero .star-decoration svg { width: 40px; height: 40px; }
-
-  #hero .light-glow { width: 300px; left: 50%; transform: translateX(-50%); top: 45%; }
+  #hero .hero-logo-wrap h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-bottom: 30px;
+  }
 
   /* 타이틀 */
   #about h2, #portfolio h2, #blog h2,
@@ -1946,6 +1907,11 @@ ul.util {
     height: 250px;
     object-fit: cover;
   }
+
+  #portfolio-details h3 {
+    font-size: 18px;
+  } 
+
   .portfolio-info-section { padding: 0 15px; }
 
   /* 공지사항 테이블 */
@@ -1982,17 +1948,31 @@ ul.util {
   #footer .util li a { font-size: 11px; }
   #footer .content { display: none; }
   #footer .copyright {font-size: 11px}
+
+    .portfolio-category h2 {
+    font-size: 50px;
+  }
+
+  .category-swiper .swiper-slide img {
+    height: 200px;
+    padding: 15px 10px;
+    margin: 10px 0px 50px 0px;
+  }
 }
+
 
 /* 480px 이하 (작은 모바일) */
 @media (max-width: 480px) {
 
-  /* Hero */
-  .hero-logo { width: 200px; }
-  #hero p { font-size: 13px; letter-spacing: 2px; }
-  .star-decoration svg { width: 30px; height: 30px; }
-  .light-glow { width: 200px; }
+  #hero .hero-logo {
+    width: 300px;
+  }
 
+  #hero .hero-logo-wrap h3 {
+    font-size: 16px;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+  }
   /* 타이틀 */
   #about h2, #portfolio h2, #blog h2,
   #notice h2, #company h2, #contact h2, #terms h2, #notice-single h2, #portfolio-details h2 {
@@ -2009,4 +1989,14 @@ ul.util {
 
   /* 가격 */
   .pricing .box { max-width: 100%; margin: 0 auto 30px auto; }
+
+  .portfolio-category h2 {
+    font-size: 35px;
+  }
+
+  .category-swiper .swiper-slide img {
+    height: 300px;
+    padding: 10px 5px;
+    margin: 5px 0px 30px 0px;
+}
 }
