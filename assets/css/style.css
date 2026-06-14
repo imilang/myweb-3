@@ -632,7 +632,7 @@ section {
   transform: scale(1.1);
 }
 
-.portfolio .portfolio-item:hover .portfolio-info {
+#portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   top: calc(50% - 18px);
 }
