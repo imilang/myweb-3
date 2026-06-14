@@ -60,19 +60,6 @@
     </div>
   </div>
 
-  <!-- 3. Swiper JS (body 닫히기 전에 추가) -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('#tbanner', {
-      direction: 'vertical', // 수직 슬라이드
-      loop: true,            // 무한 반복
-      autoplay: {
-        delay: 3000,         // 3초마다 전환
-        disableOnInteraction: false,
-      }    // 슬라이드 높이 자동
-    });
-  
-  </script>
 
   <!-- ======= Header ======= -->
   <header id="header" class="sticky-top d-flex align-items-center header-transparent">
@@ -102,25 +89,31 @@
 
   <main id="main">
     <!-- ======= Notice Section ======= -->
-    <section class="notice">
+    <section id="notice" class="notice">
+
         <div class="row">
           <div class="col-12" data-aos="fade-up">
             <h2>NOTICE</h2>
           </div>
         </div>
 
-        <div class="container" data-aos="fade-up">
-        <!-- 검색창 추가 -->
+      <div class="container" data-aos="fade-up">
+
+        <!-- 검색창 영역 -->
         <div class="notice-search">
+
           <select>
-              <option>전체</option>
-              <option>제목</option>
-              <option>작성자</option>
+            <option>전체</option>
+            <option>제목</option>
+            <option>작성자</option>
           </select>
+
           <div class="search-input-group">
-          <input type="text"><button>검색</button>
+            <input type="text"><button>검색</button>
           </div>
-        </div>
+
+        </div>  
+        
         <div class="row">
           <div class="col-12 entries">
             <table class="notice-table">
@@ -137,7 +130,7 @@
                 <!-- 공지 게시글 -->
                 <tr class="notice-row">
                 <td><span class="subject">1</span></td>
-                <td class="subject"><a href="notice-details.html">[안내] 아트앤필 공식 웹사이트 리뉴얼 오픈 안내</a></td>
+                <td class="subject"><a href="notice-single.html">[안내] 아트앤필 공식 웹사이트 리뉴얼 오픈 안내</a></td>
                 <td>아트앤필</td>
                 <td>26.06.11</td>
                 <td>0</td>
@@ -215,16 +208,14 @@
                   <td>0</td>
                 </tr>
               </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
+            </table> <!--notice table 닫힘-->
+          </div> <!-- col-12 닫힘-->
+        </div> <!-- row 닫힘-->
+      </div> <!-- Container 닫힘-->
+    </section> <!--Section 닫힘-->
 
-
-    <!-- End Notice Section -->
-
-    <div class="xans-element- xans-board xans-board-paging-1002 xans-board-paging xans-board-1002 ec-base-paginate typeList"><a href="?board_no=1&page=1">&#8249;</a>  <!-- 이전 페이지 → < -->
+    <!--페이지 이동-->
+    <div class="xans-element- xans-board xans-board-paging-1002 xans-board-paging xans-board-1002 ec-base-paginate typeList"><a href="?board_no=1&page=1">&#8249;</a> 
       <ol>
         <li class="xans-record-"><a href="?board_no=1&amp;page=1" class="this">1</a></li>
       </ol>
@@ -233,63 +224,63 @@
 
   </main><!-- End #main -->
 
-    <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="info_logo_pc_veiw">
-            <img src = "./assets/img/logo_white.png" width="200">
-          </div>
-
-          <div>
-            <ul class = "util">
-              <li>
-                <a href = "company.html">회사소개</a>
-              </li>
-              <span class="line">|</span>
-              <li>
-                <a href = "termsofuse.html">이용약관</a>
-              </li>
-              <span class="line">|</span>
-              <li>
-                <a href = "#">개인정보 취급방침</a>
-              </li>
-              <span class="line">|</span>
-              <li>
-                <a href = "#">이용안내</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class = "content">
-            <span>법인명(상호): 아트앤필</span>
-            <span class="line">|</span>
-            <span>주소: 전라남도 진도군 진도읍 성내길 31-18</span>
-            <br>
-            <span>대표자: 임이랑</span>
-            <span class="line">|</span>
-            <span>전화: 010-3103-4426</span>
-            <span class="line">|</span>
-            <span>개인정보관리책임자: 아트앤필(artfeel2024@naver.com)</span>
-            <br>
-            <span>사업자등록번호: 375-35-01278</span>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>ART&FEEL</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+      <div class="row">
+        <div class="info_logo_pc_veiw">
+          <img src = "./assets/img/logo_white.png" width="200">
+        </div>
 
+        <div>
+          <ul class = "util">
+            <li>
+              <a href = "company.html">회사소개</a>
+            </li>
+            <span class="line">|</span>
+            <li>
+              <a href = "termsofuse.html">이용약관</a>
+            </li>
+            <span class="line">|</span>
+            <li>
+              <a href = "#">개인정보 취급방침</a>
+            </li>
+            <span class="line">|</span>
+            <li>
+              <a href = "#">이용안내</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class = "content">
+          <span>법인명(상호): 아트앤필</span>
+          <span class="line">|</span>
+          <span>주소: 전라남도 진도군 진도읍 성내길 31-18</span>
+          <br>
+          <span>대표자: 임이랑</span>
+          <span class="line">|</span>
+          <span>전화: 010-3103-4426</span>
+          <span class="line">|</span>
+          <span>개인정보관리책임자: 아트앤필(artfeel2024@naver.com)</span>
+          <br>
+          <span>사업자등록번호: 375-35-01278</span>
+        </div>
+
+        <div class="copyright">
+          &copy; Copyright <strong><span>ART&FEEL</span></strong>. All Rights Reserved
+        </div>
+
+      </div> <!-- row 닫힘 -->
+    </div> <!-- container 닫힘 -->
+  </footer> <!-- footer 닫힘 -->
+
+
+  <!-- 우하단 버튼 -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="contact.html" class="contact-btn d-flex align-items-center justify-content-center">
+    <i class="bi bi-envelope"></i>
+    <span class="contact-btn-text">작업 문의하기</span>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -299,7 +290,21 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('#tbanner', {
+      direction: 'vertical',
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  
+  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

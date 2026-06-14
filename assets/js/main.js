@@ -80,12 +80,15 @@
    * Back to top button
    */
   let backtotop = select('.back-to-top')
+  let contactbtn = select('.contact-btn')
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
         backtotop.classList.add('active')
+        if (contactbtn) contactbtn.classList.add('active')
       } else {
         backtotop.classList.remove('active')
+        if (contactbtn) contactbtn.classList.remove('active')
       }
     }
     window.addEventListener('load', toggleBacktotop)

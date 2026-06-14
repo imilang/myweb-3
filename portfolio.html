@@ -60,20 +60,6 @@
     </div>
   </div>
 
-  <!-- 3. Swiper JS (body 닫히기 전에 추가) -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('#tbanner', {
-      direction: 'vertical', // 수직 슬라이드
-      loop: true,            // 무한 반복
-      autoplay: {
-        delay: 3000,         // 3초마다 전환
-        disableOnInteraction: false,
-      },
-      autoHeight: true,      // 슬라이드 높이 자동
-    });
-  
-  </script>
 
   <!-- ======= Header ======= -->
   <header id="header" class="sticky-top d-flex align-items-center header-transparent">
@@ -104,7 +90,7 @@
 
 
     <!-- ======= Portfolio Section ======= -->
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="row">
           <div class="col-12" data-aos="fade-up">
             <h2>PORTFOLIO</h2>
@@ -117,8 +103,8 @@
               <li data-filter=".filter-festival">지역축제</li>
             </ul>
 
-          </div>
-        </div>
+          </div> <!-- col-12 닫힘 -->
+        </div> <!-- row 닫힘 -->
 
         <div class="row mx-0 portfolio-container" data-aos="fade-up">
 
@@ -131,144 +117,142 @@
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-disign">
             <div class="portfolio-item">
-              <a href="portfolio-details.html" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></a>
+              <a href="#" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></a>
               <div class="portfolio-info"><h3>나주혁신센터-상추튀김가게</h3></div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-disign">
             <div class="portfolio-item">
-              <a href="portfolio-details.html" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></a>
+              <a href="#" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></a>
               <div class="portfolio-info"><h3>보성읍복합커뮤니티센터-보성롤러스케이트장</h3></div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-space_disign">
             <div class="portfolio-item">
-              <a href="portfolio-details.html" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></a>
+              <a href="#" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></a>
               <div class="portfolio-info"><h3>진도군 신흥마을 농협곡물창고</h3></div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-space_disign">
             <div class="portfolio-item">
-              <a href="portfolio-details.html" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></a>
+              <a href="#" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></a>
               <div class="portfolio-info"><h3>진도군 진도개페스티벌 체험부스</h3></div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-space_disign">
             <div class="portfolio-item">
-              <a href="portfolio-details.html" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></a>
+              <a href="#" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></a>
               <div class="portfolio-info"><h3>보성군 율어면 상징조형물-행복한 밤토리가족</h3></div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-painting">
             <div class="portfolio-item">
-              <a href="portfolio-details.html" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></a>
+              <a href="#" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></a>
               <div class="portfolio-info"><h3>2024년 국제농업박람회 포토존 시공</h3></div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-painting">
             <div class="portfolio-item">
-              <a href="portfolio-details.html" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></a>
+              <a href="#" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></a>
               <div class="portfolio-info"><h3>녹차수도보성 홍보차량 디자인랩핑</h3></div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-painting">
             <div class="portfolio-item">
-              <a href="portfolio-details.html" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></a>
+              <a href="#" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></a>
               <div class="portfolio-info"><h3>보성읍 복합커뮤니티센터 상징조형물 디자인</h3></div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-festival">
             <div class="portfolio-item">
-              <a href="portfolio-details.html" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-10.jpg" class="img-fluid" alt=""></a>
+              <a href="#" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-10.jpg" class="img-fluid" alt=""></a>
               <div class="portfolio-info"><h3>진도군 242 소행성 프로젝트-고군면 오류마을 벽화작업</h3></div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-festival">
             <div class="portfolio-item">
-              <a href="portfolio-details.html" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt=""></a>
+              <a href="#" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt=""></a>
               <div class="portfolio-info"><h3>진도군 향토문화회관 프렌즈 캐릭터 바닥화</h3></div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-festival">
             <div class="portfolio-item">
-              <a href="portfolio-details.html" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt=""></a>
+              <a href="#" title="Portfolio Details"><img src="assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt=""></a>
               <div class="portfolio-info"><h3>진도군 도시재생지원센터 옥주골창작소 성과공유회</h3></div>
             </div>
           </div>
 
-        </div>
-    </section><!-- End Portfolio Section -->
+        </div> <!-- Container 닫힘 -->
+    </section> <!-- End Portfolio Section -->
+  </main> <!-- End #main -->
 
-
-  </main><!-- End #main -->
-
-   <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="info_logo_pc_veiw">
-            <img src = "./assets/img/logo_white.png" width="200">
-          </div>
-
-          <div>
-            <ul class = "util">
-              <li>
-                <a href = "company.html">회사소개</a>
-              </li>
-              <span class="line">|</span>
-              <li>
-                <a href = "termsofuse.html">이용약관</a>
-              </li>
-              <span class="line">|</span>
-              <li>
-                <a href = "#">개인정보 취급방침</a>
-              </li>
-              <span class="line">|</span>
-              <li>
-                <a href = "#">이용안내</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class = "content">
-            <span>법인명(상호): 아트앤필</span>
-            <span class="line">|</span>
-            <span>주소: 전라남도 진도군 진도읍 성내길 31-18</span>
-            <br>
-            <span>대표자: 임이랑</span>
-            <span class="line">|</span>
-            <span>전화: 010-3103-4426</span>
-            <span class="line">|</span>
-            <span>개인정보관리책임자: 아트앤필(artfeel2024@naver.com)</span>
-            <br>
-            <span>사업자등록번호: 375-35-01278</span>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>ART&FEEL</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+      <div class="row">
+        <div class="info_logo_pc_veiw">
+          <img src = "./assets/img/logo_white.png" width="200">
+        </div>
 
+        <div>
+          <ul class = "util">
+            <li>
+              <a href = "company.html">회사소개</a>
+            </li>
+            <span class="line">|</span>
+            <li>
+              <a href = "termsofuse.html">이용약관</a>
+            </li>
+            <span class="line">|</span>
+            <li>
+              <a href = "#">개인정보 취급방침</a>
+            </li>
+            <span class="line">|</span>
+            <li>
+              <a href = "#">이용안내</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class = "content">
+          <span>법인명(상호): 아트앤필</span>
+          <span class="line">|</span>
+          <span>주소: 전라남도 진도군 진도읍 성내길 31-18</span>
+          <br>
+          <span>대표자: 임이랑</span>
+          <span class="line">|</span>
+          <span>전화: 010-3103-4426</span>
+          <span class="line">|</span>
+          <span>개인정보관리책임자: 아트앤필(artfeel2024@naver.com)</span>
+          <br>
+          <span>사업자등록번호: 375-35-01278</span>
+        </div>
+
+        <div class="copyright">
+          &copy; Copyright <strong><span>ART&FEEL</span></strong>. All Rights Reserved
+        </div>
+
+      </div> <!-- row 닫힘 -->
+    </div> <!-- container 닫힘 -->
+  </footer> <!-- footer 닫힘 -->
+
+
+  <!-- 우하단 버튼 -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="contact.html" class="contact-btn d-flex align-items-center justify-content-center">
+    <i class="bi bi-envelope"></i>
+    <span class="contact-btn-text">작업 문의하기</span>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -278,7 +262,18 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('#tbanner', {
+      direction: 'vertical',
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

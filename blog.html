@@ -60,19 +60,6 @@
     </div>
   </div>
 
-  <!-- 3. Swiper JS (body 닫히기 전에 추가) -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('#tbanner', {
-      direction: 'vertical', // 수직 슬라이드
-      loop: true,            // 무한 반복
-      autoplay: {
-        delay: 3000,         // 3초마다 전환
-        disableOnInteraction: false,
-      }    // 슬라이드 높이 자동
-    });
-  
-  </script>
 
   <!-- ======= Header ======= -->
   <header id="header" class="sticky-top d-flex align-items-center header-transparent">
@@ -218,9 +205,9 @@
                 </p>
               </div>
 
-            </article><!-- End blog entry -->
+            </article><!-- article 닫힘 -->
 
-          </div><!-- End blog entries list -->
+          </div><!-- col-lg-8 닫힘 -->
 
           <div class="col-lg-4">
 
@@ -232,7 +219,7 @@
                   <input type="text">
                   <button type="submit">검색</button>
                 </form>
-              </div><!-- End sidebar search formn-->
+              </div><!--sidebar search form 닫힘-->
 
               <h3 class="sidebar-title">Categories</h3>
               <div class="sidebar-item categories">
@@ -242,7 +229,7 @@
                   <li><a href="#">패키지디자인 <span>(5)</span></a></li>
                   <li><a href="#">행사 참여 <span>(22)</span></a></li>
                 </ul>
-              </div><!-- End sidebar categories-->
+              </div><!--sidebar categories 닫힘-->
 
               <h3 class="sidebar-title">Recent Posts</h3>
               <div class="sidebar-item recent-posts">
@@ -251,8 +238,6 @@
                   <h4><a href="blog-single.html">잊혀진 동네에 생기를 불어넣다: 성공적인 도시재생의 첫걸음</a></h4>
                   <time datetime="2020-01-01">2026.06.12</time>
                 </div>
-
-                
 
                 <div class="post-item clearfix">
                   <img src="assets/img/blog/blog-recent-2.jpg" alt="">
@@ -278,7 +263,7 @@
                   <time datetime="2020-01-01">2026.06.12</time>
                 </div>
 
-              </div><!-- End sidebar recent posts-->
+              </div><!-- sidebar recent posts 닫힘-->
 
               <h3 class="sidebar-title">Tags</h3>
               <div class="sidebar-item tags">
@@ -294,83 +279,85 @@
                   <li><a href="#">프로젝트기록</a></li>
                   <li><a href="#">지역상생</a></li>
                 </ul>
-              </div><!-- End sidebar tags-->
+              </div><!-- sidebar tags 닫힘-->
 
-            </div><!-- End sidebar -->
+            </div><!-- sidebar 닫힘 -->
 
-          </div><!-- End blog sidebar -->
+          </div><!-- col-lg-4 닫힘 -->
 
-        </div>
+        </div><!--row 닫힘-->
 
-      </div>
+      </div><!--Container 닫힘-->
 
+      <!--페이지 이동-->
       <div class="xans-element- xans-board xans-board-paging-1002 xans-board-paging xans-board-1002 ec-base-paginate typeList"><a href="?board_no=1&page=1">&#8249;</a>  <!-- 이전 페이지 → < -->
         <ol>
           <li class="xans-record-"><a href="?board_no=1&amp;page=1" class="this">1</a></li>
         </ol>
         <a href="?board_no=1&page=1">&#8250;</a>
       </div>
-    </section><!-- End Blog Section -->
+
+    </section><!--Section 닫힘-->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="info_logo_pc_veiw">
-            <img src = "./assets/img/logo_white.png" width="200">
-          </div>
-
-          <div>
-            <ul class = "util">
-              <li>
-                <a href = "company.html">회사소개</a>
-              </li>
-              <span class="line">|</span>
-              <li>
-                <a href = "termsofuse.html">이용약관</a>
-              </li>
-              <span class="line">|</span>
-              <li>
-                <a href = "#">개인정보 취급방침</a>
-              </li>
-              <span class="line">|</span>
-              <li>
-                <a href = "#">이용안내</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class = "content">
-            <span>법인명(상호): 아트앤필</span>
-            <span class="line">|</span>
-            <span>주소: 전라남도 진도군 진도읍 성내길 31-18</span>
-            <br>
-            <span>대표자: 임이랑</span>
-            <span class="line">|</span>
-            <span>전화: 010-3103-4426</span>
-            <span class="line">|</span>
-            <span>개인정보관리책임자: 아트앤필(artfeel2024@naver.com)</span>
-            <br>
-            <span>사업자등록번호: 375-35-01278</span>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>ART&FEEL</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+      <div class="row">
+        <div class="info_logo_pc_veiw">
+          <img src = "./assets/img/logo_white.png" width="200">
+        </div>
 
+        <div>
+          <ul class = "util">
+            <li>
+              <a href = "company.html">회사소개</a>
+            </li>
+            <span class="line">|</span>
+            <li>
+              <a href = "termsofuse.html">이용약관</a>
+            </li>
+            <span class="line">|</span>
+            <li>
+              <a href = "#">개인정보 취급방침</a>
+            </li>
+            <span class="line">|</span>
+            <li>
+              <a href = "#">이용안내</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class = "content">
+          <span>법인명(상호): 아트앤필</span>
+          <span class="line">|</span>
+          <span>주소: 전라남도 진도군 진도읍 성내길 31-18</span>
+          <br>
+          <span>대표자: 임이랑</span>
+          <span class="line">|</span>
+          <span>전화: 010-3103-4426</span>
+          <span class="line">|</span>
+          <span>개인정보관리책임자: 아트앤필(artfeel2024@naver.com)</span>
+          <br>
+          <span>사업자등록번호: 375-35-01278</span>
+        </div>
+
+        <div class="copyright">
+          &copy; Copyright <strong><span>ART&FEEL</span></strong>. All Rights Reserved
+        </div>
+
+      </div> <!-- row 닫힘 -->
+    </div> <!-- container 닫힘 -->
+  </footer> <!-- footer 닫힘 -->
+
+
+  <!-- 우하단 버튼 -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="contact.html" class="contact-btn d-flex align-items-center justify-content-center">
+    <i class="bi bi-envelope"></i>
+    <span class="contact-btn-text">작업 문의하기</span>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -380,7 +367,18 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('#tbanner', {
+      direction: 'vertical',
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

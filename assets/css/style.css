@@ -77,7 +77,7 @@ a:hover {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #68A4C4;
+  background: #000000;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .back-to-top:hover {
-  background: #85b6cf;
+  background: #555555;
   color: #fff;
 }
 
@@ -99,6 +99,45 @@ a:hover {
   visibility: visible;
   opacity: 1;
 }
+
+.contact-btn {
+  position: fixed;
+  right: 65px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #000000;
+  padding: 0 15px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+  width: auto;
+  gap: 8px;
+  visibility: hidden; /* 추가 */
+  opacity: 0; /* 추가 */
+}
+
+.contact-btn.active {
+  visibility: visible; /* 추가 */
+  opacity: 1; /* 추가 */
+}
+
+.contact-btn-text {
+  color: #fff;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.contact-btn i {
+  font-size: 20px;
+  color: #fff;
+  line-height: 0;
+}
+
+.contact-btn:hover {
+  background: #555555;
+  color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Header
@@ -316,7 +355,7 @@ a:hover {
 }
 
 
-.star-decoration {
+#hero .star-decoration {
   position: absolute;
   right: 15%;
   top: 40%;
@@ -327,20 +366,20 @@ a:hover {
   color: white;
 }
 
-.star-decoration svg {
+#hero .star-decoration svg {
   width: 90px; /* 70px → 90px으로 변경 */
   height: 90px;
 }
 
 
-.hero-logo {
+#hero .hero-logo {
   display: block;
   width: 700px; /* 원하는 크기로 조절 */
   position: relative;
   z-index: 1;
 }
 
-.light-glow {
+#hero .light-glow {
   position: absolute;
   left: 15%;
   top: 60%; /* 로고 아래 위치로 조정 */
@@ -352,7 +391,7 @@ a:hover {
 }
 
 
-.hero-logo-wrap {
+#hero .hero-logo-wrap {
   position: absolute;
   left: 15%;
   top: 40%;
@@ -373,11 +412,11 @@ a:hover {
   white-space: nowrap;
 }
 
-.star-decoration a svg {
+#hero .star-decoration a svg {
   transition: 0.3s;
 }
 
-.star-decoration a:hover svg path {
+#hero .star-decoration a:hover svg path {
   fill: #000000; /* 원하는 색으로 변경 */
 }
 
@@ -395,98 +434,11 @@ section {
   background-color: #f3f8fa;
 }
 
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.section-title h2 {
-  font-size: 28px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.section-title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #68A4C4;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
-
-.section-title p {
-  margin-bottom: 0;
-}
 
 /*--------------------------------------------------------------
-# Breadcrumbs
+# About Section
 --------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background-color: #f3f8fa;
-  min-height: 40px;
-}
-
-.breadcrumbs h2 {
-  font-size: 28px;
-  font-weight: 300;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
-
-
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.about h2 {
+#about h2 {
   letter-spacing: 5px;
   text-align: center;
   font-size : 140px;
@@ -494,20 +446,20 @@ section {
   padding-top: 60px;
 }
 
-.about h3 {
+#about h3 {
   font-weight: 400;
   font-size: 50px;
   color : black;
 }
 
-.about .img-fluid {
+#about .img-fluid {
   margin: 228px 0px;
 }
 
 /*--------------------------------------------------------------
-# Philosophy
+# Philosophy Section
 --------------------------------------------------------------*/
-.Philosophy h1 {
+#phliosophy h1 {
   text-align: center;
   padding: 20px;
   border-top: 1px solid #000000;
@@ -701,6 +653,14 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+}
+
+.portfolio-details h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size : 140px;
+  color : black;
+  padding-top: 60px;
 }
 
 .portfolio-details-slider .swiper-slide img {
@@ -1745,24 +1705,32 @@ section {
 --------------------------------------------------------------*/
 
 /* 공지사항 상세 */
-.notice-detail {
+.notice-single {
   padding: 40px 0;
 }
 
+.notice-single h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size : 140px;
+  color : black;
+  padding-top: 60px;
+}
+
 /* 제목 영역 */
-.notice-detail-header {
+.notice-single-header {
   border-bottom: 1px solid #ddd;
   padding: 20px 0;
   margin-bottom: 30px;
 }
 
-.notice-detail-header h2 {
+.notice-single-header h2 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.notice-detail-meta {
+.notice-single-meta {
   display: flex;
   gap: 20px;
   font-size: 13px;
@@ -1770,7 +1738,7 @@ section {
 }
 
 /* 본문 영역 */
-.notice-detail-content {
+.notice-single-content {
   min-height: 400px;
   padding: 100px 20px;
   border: 1px solid #eee;
@@ -1787,7 +1755,7 @@ section {
 }
 
 /* 목록 버튼 */
-.notice-detail-btn {
+.notice-single-btn {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 10px;
@@ -1853,14 +1821,14 @@ section {
   margin-bottom: 10px;
 }
 
-#footer .footer-top {
+#footer {
   background: #000000;
   border-top: 1px solid #2e2e2e;
   border-bottom: 1px solid #000000;
   padding: 60px 0 30px 0;
 }
 
-#footer .footer-top .util a:hover {
+#footer .util a:hover {
   background: #ffffff;
   color: #000000;
   text-decoration: none;
@@ -2016,10 +1984,16 @@ ul.util {
   margin-bottom: 15px;
 }
 
+
+
+
+/* ============================================
+   반응형 미디어쿼리
+   ============================================ */
+
+/* 1800px 이하 (대형 모니터) */
 @media (max-width: 1800px) {
-  .hero-logo {
-    width: 450px;
-  }
+  .hero-logo { width: 450px; }
 
   .hero-logo-wrap {
     flex-direction: column-reverse;
@@ -2030,33 +2004,17 @@ ul.util {
     gap: 15px;
   }
 
-  #hero p {
-    font-size: 22px;
-    letter-spacing: 3px;
-  }
+  #hero p { font-size: 22px; letter-spacing: 3px; }
 
-  .star-decoration {
-    right: 8%;
-    top: 35%;
-  }
+  .star-decoration { right: 8%; top: 35%; }
+  .star-decoration svg { width: 60px; height: 60px; }
 
-  .star-decoration svg {
-    width: 60px;
-    height: 60px;
-  }
-
-  .light-glow {
-    width: 450px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50%;
-  }
+  .light-glow { width: 450px; left: 50%; transform: translateX(-50%); top: 50%; }
 }
-/* 아이패드 */
+
+/* 1400px 이하 (아이패드) */
 @media (max-width: 1400px) {
-  .hero-logo {
-    width: 380px;
-  }
+  .hero-logo { width: 380px; }
 
   .hero-logo-wrap {
     flex-direction: column-reverse;
@@ -2067,58 +2025,28 @@ ul.util {
     gap: 15px;
   }
 
-  #hero p {
-    font-size: 18px;
-    letter-spacing: 3px;
-  }
+  #hero p { font-size: 18px; letter-spacing: 3px; }
 
-  .star-decoration {
-    right: 5%;
-    top: 35%;
-    gap: 14px;
-  }
+  .star-decoration { right: 5%; top: 35%; gap: 14px; }
+  .star-decoration svg { width: 50px; height: 50px; }
 
-  .star-decoration svg {
-    width: 50px;
-    height: 50px;
-  }
+  .light-glow { width: 380px; left: 50%; transform: translateX(-50%); top: 50%; }
 
-  .light-glow {
-    width: 380px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50%;
-  }
-
-  .company-table {
-    width: 100%;
-  }
-
-  .company-table th {
-    width: 120px;
-    font-size: 13px;
-    padding: 12px 10px;
-  }
-
-  .company-table td {
-    font-size: 13px;
-    padding: 12px 10px;
-    word-break: keep-all;
-  }
+  .company-table { width: 100%; }
+  .company-table th { width: 120px; font-size: 13px; padding: 12px 10px; }
+  .company-table td { font-size: 13px; padding: 12px 10px; word-break: keep-all; }
 }
 
+/* 992px 이하 */
 @media (max-width: 992px) {
-  .pricing .box {
-    max-width: 60%;
-    margin: 0 auto 30px auto;
-  }
+  .pricing .box { max-width: 60%; margin: 0 auto 30px auto; }
 }
 
-/* 모바일 */
+/* 850px 이하 (모바일) */
 @media (max-width: 850px) {
-  .hero-logo {
-    width: 300px;
-  }
+
+  /* Hero */
+  .hero-logo { width: 300px; }
 
   .hero-logo-wrap {
     flex-direction: column-reverse;
@@ -2129,255 +2057,86 @@ ul.util {
     gap: 15px;
   }
 
-  #hero p {
-    font-size: 16px;
-    letter-spacing: 3px;
-  }
+  #hero p { font-size: 16px; letter-spacing: 3px; }
 
-  .star-decoration {
-    right: 3%;
-    top: 35%;
-    gap: 12px;
-  }
+  .star-decoration { right: 3%; top: 35%; gap: 12px; }
+  .star-decoration svg { width: 40px; height: 40px; }
 
-  .star-decoration svg {
-    width: 40px;
-    height: 40px;
-  }
+  .light-glow { width: 300px; left: 50%; transform: translateX(-50%); top: 45%; }
 
-  .light-glow {
-    width: 300px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 45%;
-  }
+  /* 타이틀 */
+  .about h2, .portfolio h2, .blog h2,
+  .notice h2, .company h2, .contact h2, .terms h2 { font-size: 50px; }
 
-  .about h2 {
-    font-size: 50px;
-  }
+  .terms-content h2 { font-size: 15px; }
 
-  .portfolio h2 {
-    font-size: 50px;
-  }
-
-  .blog h2 {
-    font-size: 50px;
-  }
-
-  .notice h2 {
-    font-size: 50px;
-  }
-
-  .company h2 {
-    font-size: 50px;
-  }
-
-  .contact h2 {
-    font-size: 50px;
-  }
-
-  .terms h2 {
-    font-size: 50px;
-  }
-
-
-  .terms-content h2 {
-    font-size: 15px;
-  }
-
-
-
+  /* 포트폴리오 */
   .portfolio-details .portfolio-details-slider img {
-    width: 100%; /* 모바일에서 화면 꽉 차게 */
+    width: 100%;
     height: 250px;
     object-fit: cover;
   }
+  .portfolio-info-section { padding: 0 15px; }
 
-  .pricing .box {
-    max-width: 80%;
-    margin: 0 auto 30px auto;
-  }
+  /* 공지사항 테이블 */
+  .notice-table { font-size: 12px; }
+  .notice-table th, .notice-table td { padding: 8px 5px; }
+  .notice-table th:nth-child(3), .notice-table th:nth-child(4), .notice-table th:nth-child(5),
+  .notice-table td:nth-child(3), .notice-table td:nth-child(4), .notice-table td:nth-child(5) { display: none; }
 
-  .portfolio-info-section {
-    padding: 0 15px;
-  }
+  /* 공지사항 검색 */
+  .notice-search { flex-direction: row; align-items: center; gap: 5px; }
+  .notice-search select { width: auto; font-size: 12px; padding: 4px 8px; }
+  .search-input-group input[type=text] { width: 150px; font-size: 12px; padding: 4px 8px; }
+  .search-input-group button { font-size: 12px; padding: 4px 10px; }
 
-  .company-table {
-    width: 100%;
-  }
+  /* 공지사항 상세 */
+  .notice-detail-header h3 { font-size: 16px; }
+  .notice-detail-meta span { font-size: 12px; }
+  .notice-detail-content { font-size: 13px; padding: 30px; }
+  .notice-detail-content h5 { font-size: 13px; }
+  .notice-detail-content img { width: 100%; }
+  .notice-nav-table td { font-size: 12px; padding: 8px 5px; }
 
-  .company-table th {
-    width: 100px;
-    font-size: 12px;
-    padding: 10px 8px;
-  }
+  /* 회사소개 테이블 */
+  .company-table { width: 100%; }
+  .company-table th { width: 100px; font-size: 12px; padding: 10px 8px; }
+  .company-table td { font-size: 12px; padding: 10px 8px; }
 
-  .company-table td {
-    font-size: 12px;
-    padding: 10px 8px;
-  }
+  /* 가격 */
+  .pricing .box { max-width: 80%; margin: 0 auto 30px auto; }
 
-  .notice-table {
-    font-size: 12px;
-  }
-
-  .notice-table th,
-  .notice-table td {
-    padding: 8px 5px;
-  }
-
-  /* 작성자, 작성일, 조회 숨기기 */
-  .notice-table th:nth-child(3),
-  .notice-table th:nth-child(4),
-  .notice-table th:nth-child(5),
-  .notice-table td:nth-child(3),
-  .notice-table td:nth-child(4),
-  .notice-table td:nth-child(5) {
-    display: none;
-  }
-
-  .notice-search {
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 5px;
-  }
-
-  .notice-search select {
-    width: 100%;
-    font-size: 12px;
-    padding: 4px 8px;
-  }
-
-  .search-input-group input[type=text] {
-    width: 150px;
-    font-size: 12px;
-    padding: 4px 8px;
-  }
-
-  .search-input-group button {
-    font-size: 12px;
-    padding: 4px 10px;
-  }
-
-  .notice-search select {
-    width: auto;
-    font-size: 12px;
-    padding: 4px 8px;
-  }
-
-    .notice-detail-header h3 {
-    font-size: 16px;
-  }
-
-  .notice-detail-meta span {
-    font-size: 12px;
-  }
-
-  .notice-detail-content {
-    font-size: 13px;
-    padding: 30px;
-  }
-
-  .notice-detail-content h5 {
-    font-size: 13px;
-  }
-
-  .notice-detail-content img {
-    width: 100%;
-  }
-
-  .notice-nav-table td {
-    font-size: 12px;
-    padding: 8px 5px;
-  }
+  /*푸터*/
+  .info_logo_pc_veiw img { width: 100px; }
+  ul.util { flex-wrap: wrap; gap: 3px; font-size: 11px; }
+  #footer .util li a { font-size: 11px; }
+  #footer .content { display: none; }
+  #footer .copyright {font-size: 11px}
 }
 
-
-
-
-/* 작은 모바일 */
+/* 480px 이하 (작은 모바일) */
 @media (max-width: 480px) {
-  .hero-logo {
-    width: 200px;
-  }
 
-  #hero p {
-    font-size: 13px;
-    letter-spacing: 2px;
-  }
+  /* Hero */
+  .hero-logo { width: 200px; }
+  #hero p { font-size: 13px; letter-spacing: 2px; }
+  .star-decoration svg { width: 30px; height: 30px; }
+  .light-glow { width: 200px; }
 
-  .star-decoration svg {
-    width: 30px;
-    height: 30px;
-  }
-
-  .light-glow {
-    width: 200px;
-  }
-
-  .about h2 {
+  /* 타이틀 */
+  .about h2, .portfolio h2, .blog h2,
+  .notice h2, .company h2, .contact h2, .terms h2 {
     font-size: 50px;
-    word-break: keep-all; /* 단어 단위로 줄바꿈 */
-    white-space: normal;  /* 줄바꿈 허용 */
+    word-break: keep-all;
+    white-space: normal;
   }
 
-  .portfolio h2 {
-    font-size: 50px;
-    word-break: keep-all; /* 단어 단위로 줄바꿈 */
-    white-space: normal;  /* 줄바꿈 허용 */
-  }
+  .terms-content h2 { font-size: 15px; }
 
-  .blog h2 {
-    font-size: 50px;
-    word-break: keep-all; /* 단어 단위로 줄바꿈 */
-    white-space: normal;  /* 줄바꿈 허용 */
-  }
+  /* 배너 */
+  #tbanner { height: 35px; }
+  #tbanner .swiper-slide { height: 35px; }
 
-  .notice h2 {
-    font-size: 50px;
-    word-break: keep-all; /* 단어 단위로 줄바꿈 */
-    white-space: normal;  /* 줄바꿈 허용 */
-  }
-
-  .company h2 {
-    font-size: 50px;
-    word-break: keep-all; /* 단어 단위로 줄바꿈 */
-    white-space: normal;  /* 줄바꿈 허용 */
-  }
-
-  
-  .terms h2 {
-    font-size: 50px;
-    word-break: keep-all; /* 단어 단위로 줄바꿈 */
-    white-space: normal;  /* 줄바꿈 허용 */
-  }
-    
-  .terms-content h2 {
-    font-size: 15px;
-  }
-
-
-  .contact h2 {
-    font-size: 50px;
-    word-break: keep-all; /* 단어 단위로 줄바꿈 */
-    white-space: normal;  /* 줄바꿈 허용 */
-  }
-
-  .pricing .box {
-    max-width: 100%;
-    margin: 0 auto 30px auto;
-  }
-
-  #tbanner {
-    height: 35px;
-  }
-
-  #tbanner .swiper-slide {
-    height: 35px;
-  }
-
+  /* 가격 */
+  .pricing .box { max-width: 100%; margin: 0 auto 30px auto; }
 }
-
-
-
-
